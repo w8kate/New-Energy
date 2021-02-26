@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script defer src="./js/just-validate.min.js"></script>
+    <script defer src="./js/inputmask.min.js"></script>
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container" id="start">
+            <div class="header-info">
+                <img class="header-info__img" src="./img/logo.png">
+                <ul class="header-info__list">
+                    <li class="header-info__item header-info__item--one">
+                        Работаем по всей России
+                    </li>
+                    <li class="header-info__item header-info__item--two">
+                        info@nppne.ru
+                    </li>
+                    <li class="header-info__item header-info__item--three">
+                        +7 (495) 177-57-20 (Мск)
+                    </li>
+                    <li class="header-info__item header-info__item--four">
+                        +7 (812) 645-65-20 (СПб)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="header-nav">
+            <ul class="container header-nav__list">
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">О компании</a>
+                </li>
+                <li class="header-nav__item">
+                    <button class="header-nav__button">Услуги</button>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">Об энергосервисе</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link header-nav__link--is-active" href="#">Оценка экономии</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">Наши проекты</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">Нормативная база</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section-hero container">
+        <div class="section-hero__way">
+            <a class="section-hero__way-main" href="#">Главная</a>
+            <div class="section-hero__way-now">Оценка экономии</div>
+        </div>
+        <h1 class="section-hero__heading">
+            Оценка потенциала экономии
+        </h1>
+        <h2 class="section-hero__desk">
+            Рассчитайте сколько вы сэкономите
+        </h2>
+        <div class="section-hero__saving">
+            <div class="section-hero__calc">
+                <h3 class="section-hero__calc-header">
+                    Калькулятор
+                </h3>
+                <p class="section-hero__calc-desk">
+                    Воспользуйтесь нашим калькулятором и узнайте примерный расчёт
+                </p>
+                <button class="section-hero__calc-btn">
+                    Узнать потенциальную экономию
+                </button>
+            </div>
+            <div class="section-hero__or">
+                или
+            </div>
+            <div class="section-hero__download">
+                <p class="section-hero__download-desk">
+                    Скачайте и заполните опросный лист и отправьте его нам на почту:
+                </p>
+                <div class="section-hero__download-mail">
+                    INFO@NPPNE.RU
+                </div>
+                <a class="section-hero__download-btn" href="#" download>
+                    Скачать лист
+                </a>
+            </div>
+        </div>
+        <div class="section-hero__answers">
+            <h3 class="section-hero__answers-heading">
+                ОТВЕТИМ НА ВАШИ ВОПРОСЫ
+            </h3>
+            <div class="section-hero__answers-desk">
+                Заполните форму и мы свяжемся с Вами с 9.00 до 20.00
+                <span class="section-hero__answers-info">по Московскому времени в будние дни</span>
+            </div>
+            <form class="section-hero__answers-form" action="">
+                <label class="answers-form__label">
+                    <span class="answers-form__label-info">Имя</span>
+                    <input id="name" class="answers-form__input" name="name" type="text" placeholder="Ваше Имя">
+                </label>
+                <label class="answers-form__label">
+                    <span class="answers-form__label-info answers-form__label-info--phone">Телефон</span>
+                    <input id="phone" class="answers-form__input" name="tel" type="tel" placeholder="+7 (" data-validate-field="tel">
+                </label>
+                <label class="answers-form__label answers-form__label--mail">
+                    <span class="answers-form__label-info">E-mail</span>
+                    <input id="mail" class="answers-form__input" name="mail" type="mail" placeholder="Адрес электронной почты">
+                </label>
+                <label class="answers-form__label-download">
+                    <span class="answers-form__label-download-info" tabindex="0">Прикрепить файл</span>
+                    <input id="download" class="answers-form__input-download" name="file" type="file">
+                </label>
+                <label class="answers-form__label-check">
+                    <input id="check" class="answers-form__check" type="checkbox" name="check" data-validate-field="check" checked>
+                    <span class="answers-form__check-checked" tabindex="0"></span>
+                    <span class="answers-form__check-info">Согласие на обработку персональных данных</span>
+                    <div class="answers-form__check-desk">Обработка персональных данных осуществляется согласно ФЗ РФ от 27 июля 2006 г. №152 ФЗ.</div>
+                </label>
+                <button class="answers-form__btn" type="submit">Отправить заявку</button>
+              </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <img class="footer-info__img" src="./img/logo2.png">
+                <div class="footer-info__desk">
+                    Научно-производственное предприятие Новая энергия
+                </div>
+                <button class="footer-info__btn">
+                    Написать руководителю
+                </button>
+            </div>
+            <div class="footer-about">
+                <div class="footer__title">
+                    О КОМПАНИИ
+                </div>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">Об энергосервисе</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">Оценка экономии</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">Наши проекты</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">Нормативная база</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <div class="footer__title">
+                    УСЛУГИ
+                </div>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">Энергосервис</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">Энергетическое обследование</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">Внедрение системы автоматизированного учетапотребления энергоресурсов</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">Модернизация системы внешнего и внутреннего освещения зданий</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">Модернизация системы вентиляции и отопления зданий</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">Разработка программы энергосбережения и повышения знергетической эффективности</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <div class="footer__title">
+                    КОНТАКТЫ
+                </div>
+                <ul class="footer-list footer-list-contacts">
+                    <li class="footer-item footer-item-contacts footer-item-contacts--one">
+                        <a class="footer-link" href="#">119071 Москва, Ленинский проспект д.19, стр.1</a>
+                    </li>
+                    <li class="footer-item footer-item-contacts footer-item-contacts--two">
+                        <a class="footer-link footer-link--main" href="#">+7 (495) 177-57-20 (Москва)</a>
+                    </li>
+                    <li class="footer-item footer-item-contacts footer-item-contacts--one">
+                        <a class="footer-link" href="#">197375 г. Санкт-Петербург, ул. Маршала Новикова д. 41., кор. 1, БЦ «Эврика», офис 116</a>
+                    </li>
+                    <li class="footer-item footer-item-contacts footer-item-contacts--two">
+                        <a class="footer-link footer-link--main" href="#">+7 (812) 645-65-20 (Санкт-Петербург)</a>
+                    </li>
+                    <li class="footer-item footer-item-contacts footer-item-contacts--three">
+                        <a class="footer-link footer-link--main" href="#">info@nppne.ru</a>
+                    </li>
+                    <li class="footer-item footer-item-social">
+                        <a class="footer-item-social__link" href="#">
+                            <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g class="footer__telegram--background" opacity="0.1">
+                                    <path class="footer__telegram--background" d="M23.7864 4.07986C18.3438 -1.36111 9.52083 -1.3598 4.07986 4.08286C-1.36111 9.52551 -1.3598 18.3484 4.08286 23.7894C9.52551 29.2303 18.3484 29.229 23.7894 23.7864C26.4024 21.1725 27.87 17.6276 27.8692 13.9316C27.8684 10.2362 26.3998 6.69249 23.7864 4.07986ZM21.1035 19.4107C21.1036 19.4107 21.1034 19.4108 21.1035 19.4107C21.1029 19.4114 21.1016 19.4112 21.1016 19.4103C21.1016 19.4095 21.1006 19.409 21.0999 19.4096L20.3956 20.1093C19.4825 21.034 18.1527 21.4144 16.8887 21.1126C15.6153 20.7718 14.4047 20.2292 13.3029 19.5055C12.2792 18.8513 11.3306 18.0865 10.4742 17.2249C9.68614 16.4426 8.9782 15.5837 8.36072 14.6609C7.68533 13.668 7.15075 12.5863 6.77218 11.4466C6.33819 10.1078 6.69782 8.63876 7.70117 7.6518L8.52794 6.82503C8.7578 6.59413 9.13132 6.59332 9.36216 6.82318C9.36276 6.82378 9.36342 6.82438 9.36401 6.82503L11.9744 9.43543C12.2053 9.6653 12.2061 10.0388 11.9763 10.2697C11.9757 10.2703 11.9751 10.2709 11.9744 10.2715L10.4416 11.8043C10.0018 12.2393 9.94649 12.9306 10.3116 13.43C10.866 14.1909 11.4795 14.9068 12.1463 15.5713C12.8898 16.318 13.6981 16.9973 14.5616 17.6012C15.0606 17.9492 15.7371 17.8905 16.1687 17.4618L17.6504 15.9569C17.8803 15.726 18.2538 15.7252 18.4846 15.955C18.4852 15.9556 18.4858 15.9562 18.4865 15.9569L21.1016 18.5766C21.3325 18.8064 21.3333 19.1798 21.1035 19.4107Z" fill="white"/>
+                                    <path class="footer__telegram--background" d="M25.3356 13.9346C25.3356 20.2312 20.2312 25.3356 13.9346 25.3356C7.63797 25.3356 2.53356 20.2312 2.53356 13.9346C2.53356 7.63797 7.63797 2.53356 13.9346 2.53356C20.2312 2.53356 25.3356 7.63797 25.3356 13.9346Z" fill="white"/>
+                                </g>
+                                <path class="footer__social-icon" opacity="0.7" d="M11.7256 15.4122L11.539 18.0059C11.806 18.0059 11.9216 17.8926 12.0602 17.7565L13.312 16.5743L15.9057 18.4513C16.3814 18.7133 16.7165 18.5754 16.8448 18.0189L18.5473 10.1356C18.6982 9.44077 18.2935 9.16858 17.8301 9.33905L7.82279 13.1251C7.13981 13.387 7.15015 13.7633 7.70669 13.9337L10.2651 14.7201L16.2079 11.0456C16.4876 10.8626 16.7419 10.9638 16.5327 11.1468L11.7256 15.4122Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a class="footer-item-social__link" href="#">
+                            <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g class="footer__instagram--background" opacity="0.1">
+                                    <path class="footer__instagram--background" d="M23.9172 4.07986C18.4746 -1.36111 9.65169 -1.3598 4.21072 4.08286C-1.23025 9.52551 -1.22894 18.3484 4.21372 23.7894C9.65637 29.2303 18.4793 29.229 23.9202 23.7864C26.5333 21.1725 28.0009 17.6276 28.0001 13.9316C27.9993 10.2362 26.5307 6.69249 23.9172 4.07986ZM21.2343 19.4107C21.2344 19.4107 21.2342 19.4108 21.2343 19.4107C21.2337 19.4114 21.2325 19.4112 21.2325 19.4103C21.2325 19.4095 21.2314 19.409 21.2308 19.4096L20.5264 20.1093C19.6133 21.034 18.2835 21.4144 17.0196 21.1126C15.7461 20.7718 14.5356 20.2292 13.4337 19.5055C12.4101 18.8513 11.4614 18.0865 10.605 17.2249C9.817 16.4426 9.10906 15.5837 8.49158 14.6609C7.81619 13.668 7.28161 12.5863 6.90304 11.4466C6.46905 10.1078 6.82868 8.63876 7.83203 7.6518L8.6588 6.82503C8.88866 6.59413 9.26218 6.59332 9.49302 6.82318C9.49362 6.82378 9.49428 6.82438 9.49487 6.82503L12.1053 9.43543C12.3362 9.6653 12.337 10.0388 12.1071 10.2697C12.1065 10.2703 12.1059 10.2709 12.1053 10.2715L10.5725 11.8043C10.1327 12.2393 10.0773 12.9306 10.4424 13.43C10.9968 14.1909 11.6103 14.9068 12.2772 15.5713C13.0207 16.318 13.8289 16.9973 14.6925 17.6012C15.1915 17.9492 15.8679 17.8905 16.2996 17.4618L17.7813 15.9569C18.0111 15.726 18.3847 15.7252 18.6155 15.955C18.6161 15.9556 18.6167 15.9562 18.6173 15.9569L21.2324 18.5766C21.4634 18.8064 21.4642 19.1798 21.2343 19.4107Z" fill="white"/>
+                                    <path class="footer__instagram--background" d="M25.4665 13.9346C25.4665 20.2312 20.362 25.3356 14.0654 25.3356C7.76883 25.3356 2.66442 20.2312 2.66442 13.9346C2.66442 7.63797 7.76883 2.53356 14.0654 2.53356C20.362 2.53356 25.4665 7.63797 25.4665 13.9346Z" fill="white"/>
+                                </g>
+                                <g class="footer__social-icon" opacity="0.7">
+                                    <rect class="footer__social-icon" x="7.96077" y="7.82991" width="12.2093" height="12.2093" rx="2.65421" stroke="white" stroke-width="1.06168"/>
+                                    <circle class="footer__social-icon" cx="14.0655" cy="13.9346" r="2.91963" stroke="white" stroke-width="1.06168"/>
+                                    <circle class="footer__social-icon" cx="17.599" cy="10.4009" r="0.796262" fill="white"/>
+                                </g>
+                            </svg>
+                        </a>
+                        <a class="footer__arrow" href="#start"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
